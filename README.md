@@ -15,7 +15,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-dev--book--lab-181717?style=flat-square&logo=github)](https://github.com/dev-book-lab)
 [![Spring Security](https://img.shields.io/badge/Spring_Security-6.x-6DB33F?style=flat-square&logo=spring&logoColor=white)](https://docs.spring.io/spring-security/reference/)
-[![OWASP](https://img.shields.io/badge/OWASP_Top_10-2023-C0392B?style=flat-square&logo=owasp&logoColor=white)](https://owasp.org/Top10/)
+[![OWASP](https://img.shields.io/badge/OWASP_Top_10-2023-C0392B?style=flat-square)](https://owasp.org/Top10/)
 [![Docs](https://img.shields.io/badge/Docs-41개-blue?style=flat-square&logo=readthedocs&logoColor=white)](./README.md)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square&logo=opensourceinitiative&logoColor=white)](./LICENSE)
 
@@ -256,9 +256,9 @@ services:
       MYSQL_DATABASE: security_test
 
   webgoat:
-    image: webgoat/webgoat:latest
+    image: webgoat/goatandwolf:latest
     ports:
-      - "8888:8888"   # 취약점 학습 플랫폼
+      - "9090:9090"   # 취약점 학습 플랫폼
 
   owasp-zap:
     image: ghcr.io/zaproxy/zaproxy:stable
